@@ -14,3 +14,25 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.custom-caret {
+  background-color: #ffbb00;
+}
+
+.custom-caret-blink {
+  animation: blinkcaret 1s infinite steps(1, start);
+}
+
+body {
+  caret-color: transparent;
+}
+
+@keyframes blinkcaret {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
